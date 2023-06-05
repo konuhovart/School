@@ -1,0 +1,21 @@
+const rootElem = document.querySelector('#root');
+
+    function render({title, price}) {
+    const titleEl = document.createElement('p');
+    const priceEl = document.createElement('p');
+    const container = document.createElement('div');
+ 
+    titleEl.innerText = title;
+    priceEl.innerText = price;
+    
+    container.append(titleEl, priceEl,);
+    rootElem.append(container);
+  }
+
+function getItemPrice(id){
+      fetch('https://fakestoreapi.com/products/' + id)
+        .then(resp => resp.json())
+        .then(data => render(data));
+    }
+
+    getItemPrice(1)
