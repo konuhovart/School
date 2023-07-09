@@ -1,0 +1,34 @@
+.item{
+    border: 2px solid black;
+    width: 1512px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin: auto;
+}
+
+.div{
+    margin: 0px 250px 0px 150px;
+    display: flex;
+    gap: 30px;
+}
+
+.input{
+    width: 320px;
+    height: 57px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.btn{
+    border-radius: 10px;
+    background: #E67E22;
+    width: 189px;
+    height: 57px;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
